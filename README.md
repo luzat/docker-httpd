@@ -15,7 +15,7 @@ This is a customized docker image of Apache based on the official images. It is 
   * `rewrite`
 * Configurability:
   * `*.conf` taken from `/usr/local/apache2/conf/conf.d` (samples in [conf.d](conf.d))
-  * host name taken from `$HTTPD_HOST` (default: `localhost)`
+  * host name taken from `$HTTPD_HOST` (default: `localhost`)
   * subdirectory of `/var/www` taken from `$HTTPD_DIR` (default: `htdocs`)
 * Optional SSL support:
   * requires `server.crt` and `server.key` in `/usr/local/apache2` 
