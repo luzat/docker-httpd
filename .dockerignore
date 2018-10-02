@@ -1,0 +1,5 @@
+conf.d
+.*
+*.md
+server.crt
+server.key
