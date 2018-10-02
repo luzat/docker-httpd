@@ -34,5 +34,3 @@ IncludeOptional conf/conf.d/*.conf\n'\
     /^CustomLog\s*/,+1d' \
     /usr/local/apache2/conf/extra/httpd-ssl.conf; \
   mkdir -p /usr/local/apache2/conf/conf.d
-
-VOLUME /var/www
