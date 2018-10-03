@@ -33,4 +33,6 @@ IncludeOptional conf/conf.d/*.conf\n'\
     /^(Transfer|Error)Log\s*/d; \
     /^CustomLog\s*/,+1d' \
     /usr/local/apache2/conf/extra/httpd-ssl.conf; \
-  mkdir -p /usr/local/apache2/conf/conf.d
+  mkdir -p /var/www /usr/local/apache2/conf/conf.d
+
+WORKDIR /var/www
