@@ -1,4 +1,4 @@
-FROM httpd:2.4.41
+FROM httpd:2.4.46
 
 ENV \
   HTTPD_DIR=htdocs \
