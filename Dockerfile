@@ -1,4 +1,4 @@
-FROM httpd:2.4.46
+FROM httpd:2.4.54
 
 ENV \
   HTTPD_DIR=htdocs \
@@ -36,3 +36,4 @@ IncludeOptional conf/conf.d/*.conf\n'\
   mkdir -p /var/www /usr/local/apache2/conf/conf.d
 
 WORKDIR /var/www
+
