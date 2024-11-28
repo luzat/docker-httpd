@@ -1,13 +1,13 @@
 # syntax=docker/dockerfile:1
 
-FROM httpd:2.4.61
+FROM httpd:2.4.62
 
 ENV HTTPD_DIR=htdocs
 ENV HTTPD_HOST=localhost
 
 RUN <<-EOF
   set -xe
-  sed -ri 's/^#*(LoadModule (deflate|expires|http2|proxy|proxy_fcgi|rewrite)_module )/\1/' /usr/local/apache2/conf/httpd.conf
+  sed -ri 's/^# *(LoadModule (brotli|deflate|expires|http2|proxy|proxy_fcgi|rewrite)_module )/\1/' /usr/local/apache2/conf/httpd.conf
   echo '
 ServerName "${HTTPD_HOST}"
 DocumentRoot "/var/www/${HTTPD_DIR}"
