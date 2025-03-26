@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM httpd:2.4.62
+FROM httpd:2.4.63
 
 ENV HTTPD_DIR=htdocs
 ENV HTTPD_HOST=localhost
